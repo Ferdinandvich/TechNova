@@ -79,6 +79,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
+        'USER': 'technovadb_8pj4_user',
+        'PASSWORD' : '7j3cwSSf8wMsQm1IcIhFMmIXtrSJr2eH',
+        'HOST': 'dpg-cte43qlumphs739bna50-a.oregon-postgres.render.com/technovadb_8pj4',
+        'PORT': '5432'
     }
 }
 
