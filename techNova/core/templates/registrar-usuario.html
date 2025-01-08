@@ -16,11 +16,12 @@
     <div class="text-align text-center m-4">
         <h1>REGISTRAR USUARIO</h1>
         <form method="POST">
+            {% csrf_token %}
             <label for="usuario">Nome do Usuário</label>
-            <input type="text" class="form-control" id="usuario">
+            <input type="text" class="form-control" id="usuario" name="usuario">
 
             <label for="senha">Senha</label>
-            <input type="password" class="form-control" id="senha">
+            <input type="password" class="form-control" id="senha" name="senha">
 
             <button type="submit" class="btn btn-primary m-3">Registrar</button>
         </form>
