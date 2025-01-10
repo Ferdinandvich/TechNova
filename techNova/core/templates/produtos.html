@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <main>
+        <h1>Produtos da TechNova</h1>
+        <p>Conheça nossos produtos tecnológicos inovadores:</p>
+        
+        {% for produto in produtos %}
+        <section>
+            <h2>{{ produto.nome }}</h2>
+            <p>{{ produto.descricao }}</p>
+            <p><strong>Preço:</strong> R$ {{ produto.preco }}</p>
+        </section>
+        {% endfor %}
+    </main>
+{% endblock %}

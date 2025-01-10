@@ -7,6 +7,9 @@ from django.contrib.auth.models import User
 def home(request):
     return render(request, 'home.html')
 
+def produtos(request):
+    return render(request, 'produtos.html')
+
 def sobre(request):
     return render(request, 'sobre.html')
 
@@ -23,4 +26,7 @@ def registrarUsuario(request):
 
 def custom_logout(request):
     logout(request)
-    return render(request, 'home.html')
+    return render(request, 'logout.html')
+
+def login(request):
+    return render(request, 'login.html')
